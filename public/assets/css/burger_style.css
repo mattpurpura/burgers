@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    position: relative;
+}
+
+body {
+  background-color: lemonchiffon;  
+}
+
+#content {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+#title {
+    margin-left: 397px;
+}
+
+.flex-container {
+    display: flex;
+    overflow: auto;
+}
+
+#uneaten-burgers {
+    background-color: white;
+    width: 48%;
+    padding: 5px;
+    margin-right: 10px;
+    overflow: auto;
+}
+
+#eaten-burgers {
+    background-color: white;
+    width: 48%;
+    padding: 5px;
+    overflow: auto;
+}
+
+.burger-form{
+    left: 265px;
+}

@@ -1,8 +1,9 @@
-<h1>Burgers</h1>
+<div id="content">
+<h1 id="title">Burgers</h1>
 
+<div class = "flex-container">
+<div id="uneaten-burgers">
 <h2>Burgers available for devouring</h2>
-
-<div>
    <ul>
     {{#each burgers}}
         {{#unless devoured}}
@@ -17,10 +18,8 @@
 </ul> 
 </div>
 
-
-<h2>Devoured Burgers</h2>
-
-<div>
+<div id = "eaten-burgers">
+    <h2>Devoured Burgers</h2>
     <ul>
         {{#each burgers}}
             {{#if devoured}}
@@ -32,12 +31,18 @@
     </ul>  
 </div>
 
-<h3>Build-a-Burger</h3>
-<form class="create-form">
-    <div class="form-group">
-        <label for="new-burger">Name Your Burger</label>
-        <input type="text" id="new-burger" name="name">
-    </div>
+</div>
 
-    <button type="submit" id="add-burger">Add Burger</button>
-</form>
+<div class = "burger-form">
+    <h3>Build-a-Burger</h3>
+    <form class="create-form">
+        <div class="form-group">
+            <label for="new-burger">Name Your Burger</label>
+            <input type="text" id="new-burger" name="name">
+        </div>
+
+        <button type="submit" id="add-burger">Add Burger</button>
+    </form>
+</div>
+</div>
+
